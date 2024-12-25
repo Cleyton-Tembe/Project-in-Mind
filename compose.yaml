@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'fid'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=fid_Clientes'
+      - 'MYSQL_PASSWORD=r'
+      - 'MYSQL_ROOT_PASSWORD=r'
+      - 'MYSQL_USER=ro'
+    ports:
+      - '3307'
